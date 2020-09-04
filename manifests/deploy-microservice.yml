@@ -20,7 +20,7 @@ spec:
                 source: demo
         spec:
             containers:
-                -   image: 702037529261.dkr.ecr.us-west-2.amazonaws.com/demo-spinnaker-pipeline
+                -   image: 702037529261.dkr.ecr.us-west-2.amazonaws.com/mild-temper
                     name: mild-temper-microservice
                     ports:
                         -   name: web
@@ -61,6 +61,3 @@ spec:
                         backend:
                             serviceName: mild-temper-microservice-service
                             servicePort: 30201
-
-
-
